@@ -18,30 +18,34 @@ print(message)
 # 重新定义消息内容, 调用列表引索为 1 的元素, 并将消息打印出来;
 message = "Sorry guy, " + \
           Guests[1].title() + \
-          " is busy, he cant join to us.\n"
+          " is busy, he can't join to us.\n"
 print(message)
 
 # 重新赋值列表引索为 1 的元素
 Guests[1] = 'dd'
 # 重新定义消息内容, 调用列表引索为 1 的元素, 并将消息打印出来;
-message = "But " + Guests[1].title() + " will be come in.\n"
+message = "But " + Guests[1].title() + \
+           " and other guests want to join us.\n"
 print(message)
 
 # 使用 append() 添加列表元素; 所添加的元素会位于列表的最后一个.
 Guests.append('ee')
 Guests.append('ff')
 Guests.append('gg')
-# 重新定义消息内容, 引用列表元素编辑并打印消息
-message = "Everybody, I find a place is bigger, I want to get there.\n"
-print(message)
 
 # 使用 insert(整数, '元素值') 插入元素到列表开头.
 # insert()中的整数即插入位的引索值, ''内为元素值.
 Guests.insert(0, 'hh')
 # 使用 insert() 插入元素到列表中间.
 Guests.insert(3, 'ii')
+
 # 使用 append() 在列表末端添加元素.
 Guests.append('jj')
+
+# 重新定义消息内容, 引用列表元素编辑并打印消息
+message = "Everybody, I find a place is bigger, I want to get there.\n"
+print(message)
+
 # 由于列表元素太多, 暂将列表打印出来, 数数个数. (后期应该会学到获得列表长度的函数)
 # print("Guests list:", Guests, "\n")
 # 由打印结果得知列表一共有 9 个元素, 调用列表元素打印消息
