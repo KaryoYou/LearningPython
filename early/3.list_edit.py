@@ -47,7 +47,7 @@ message = "Everybody, I find a place is bigger, I want to get there.\n"
 print(message)
 
 # 由于列表元素太多, 暂将列表打印出来, 数数个数. (后期应该会学到获得列表长度的函数)
-# print("Guests list:", Guests, "\n")
+print("Guests list:", Guests, "\n")
 # 由打印结果得知列表一共有 9 个元素, 调用列表元素打印消息
 message = "Hi: " + \
           Guests[0].title() + ", " + \
@@ -104,4 +104,4 @@ print("Hey, ", Guests[1].title(),
 # 使用 del 删除列表中剩余元素, 最后打印列表核实程序结束时列表是空的.
 del Guests[0]
 del Guests[0]
-print("现在的列表内容为:", Guests)
+print("Guests list:", Guests, "\n")
